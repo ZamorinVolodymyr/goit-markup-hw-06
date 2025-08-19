@@ -961,20 +961,17 @@ button {
 
 @media screen and (min-width: 1158px) {
   .page-footer {
-    width: 100%;
+    max-width: 100%;
     height: 312px;
     padding: 100px 0;
   }
 
   .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
-    flex-wrap: nowrap;
-  }
-
-  .footer-logo {
-    display: inline-block;
+    padding: 0 15px;
+    gap: 0;
   }
 
   .footer-logo-container {
@@ -987,19 +984,18 @@ button {
   }
 
   .footer-contacts {
+    max-width: 208px;
     margin-right: 80px;
   }
 
   .footer-subscribe {
-    align-items: center;
-    justify-content: center;
-    width: 453px;
+    max-width: 453px;
   }
 
   .footer-form {
     gap: 24px;
-    flex-wrap: wrap;
-    max-width: 453px;
+    flex-direction: row;
+    align-items: center;
   }
 
   .footer-input {
