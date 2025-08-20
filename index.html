@@ -59,37 +59,78 @@
           </svg>
         </button>
 
-        <div class="mobile-menu">
+        <div class="mobile-menu is-open">
           <div class="container mobile-menu-container">
             <button class="mobile-menu-close" type="button">
-              <svg class="icon" width="8" height="8">
+              <svg class="icon-x" width="8" height="8">
                 <use href="./images/icons.svg#icon-close-black"></use>
               </svg>
             </button>
-            <div>
-              <nav class="mobile-header-nav">
-                <ul class="mobile-nav-list">
-                  <li class="mobile-nav-item">
-                    <a class="mobile-nav-link current" href="./index.html"
-                      >Studio</a
+
+            <nav class="mobile-menu-nav">
+              <ul class="mobile-nav-list">
+                <li class="mobile-nav-item">
+                  <a class="mobile-nav-link current" href="./index.html"
+                    >Studio</a
+                  >
+                </li>
+                <li class="mobile-nav-item">
+                  <a class="mobile-nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="mobile-nav-item">
+                  <a class="mobile-nav-link" href="#">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="soc-link">
+              <address class="menu-contacts">
+                <ul class="menu-contacts-list">
+                  <li class="menu-contacts-item">
+                    <a
+                      class="menu-contacts-link current"
+                      href="tel:+110001111111"
+                      >+11 (000) 111-11-11</a
                     >
                   </li>
-                  <li class="mobile-nav-item">
-                    <a class="mobile-nav-link" href="#">Portfolio</a>
-                  </li>
-                  <li class="mobile-nav-item">
-                    <a class="mobile-nav-link" href="#">Contacts</a>
+                  <li class="menu-contacts-item">
+                    <a
+                      class="menu-contacts-link"
+                      href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
                   </li>
                 </ul>
-              </nav>
-            </div>
-            <div class="soc-link">
-              <address>address</address>
-              <ul>
-                <li>ins</li>
-                <li>tw</li>
-                <li>fb</li>
-                <li>link</li>
+              </address>
+              <ul class="icon-list menu-soc">
+                <li class="icon-list-item">
+                  <a class="nav-icon" href=""
+                    ><svg class="icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="icon-list-item">
+                  <a class="nav-icon" href=""
+                    ><svg class="icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="icon-list-item">
+                  <a class="nav-icon" href=""
+                    ><svg class="icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="icon-list-item">
+                  <a class="nav-icon" href=""
+                    ><svg class="icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -543,7 +584,7 @@
       </div>
     </footer>
 
-    <div class="hidden backdrop" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="modal-close" type="button" data-modal-close>
           <svg class="icon" width="8" height="8">
@@ -611,20 +652,21 @@
             <input
               class="visually-hidden"
               type="checkbox"
-              name="user-privacy"
               value="true"
               id="user-privacy"
             />
-            <label class="priv-label" for="user-privacy">
-              <span class="box">
-                <svg class="chek-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-check"></use>
-                </svg>
-              </span>
-              I accept the terms and conditions of the
-              <a class="privacy-link" href="#">Privacy Policy</a>
-            </label>
           </div>
+          <label class="priv-label" for="user-privacy">
+            <span class="box">
+              <svg class="chek-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            <span>
+              <span> I accept the terms and conditions of the </span>
+              <a class="privacy-link" href="#">Privacy Policy</a>
+            </span>
+          </label>
           <button class="button modal-btn" type="submit">Send</button>
         </form>
       </div>

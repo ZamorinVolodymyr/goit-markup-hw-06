@@ -350,7 +350,7 @@ footer
   color: #ffffff;
   opacity: 1;
 } */
-
+/* 
 .backdrop {
   position: fixed;
   top: 0;
@@ -582,4 +582,4 @@ textarea::placeholder {
 
 #user-privacy:checked ~ .priv-label > .box {
   fill: #f4f4fd;
-}
+} */
